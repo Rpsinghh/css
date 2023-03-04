@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position in css</title>
+</head>
+<body>
+    <style>
+        .div1{
+            width:150px;
+            height: 150px;
+            background-color:red;
+            position: static;
+            position:relative;
+            /* top:30px; */
+            bottom:20px;
+            position:absolute;
+            position: sticky;
+            position: fixed;
+
+        }
+        .div2{
+            width:150px;
+            height: 150px;
+            background-color:yellow;
+            position:relative;
+            position: absolute;
+            position:fixed;
+            /* position:sticky; */
+
+        }
+        .div3{
+            width:150px;
+            height: 150px;
+            background-color:aqua;
+            position:relative;
+            /* no effect will be shown until we add some left right top bottom vales */
+            left:30px;
+            /* position:static */
+            position: absolute;
+            position:sticky;
+            position:fixed
+
+        }
+    </style>
+    <h1>Position in css</h1>
+    <!-- There are five types of position property tha are static,relative,absolute,fixed,sticky.use all one by one and by default positions are static-->
+    <div class="div1"></div><br><br>
+    <div class="div2"></div><br><br>
+    <div class="div3"></div><br>
+    
+</body>
+</html>
