@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box sizing in html</title>
+</head>
+<body>
+    <h1>Box sizing in html</h1>
+    <!-- there are two types of box sizing 1.border-box in which the border value is also there
+    2.Content-box which is the default value 
+so try both the values as i try in my code -->
+    <div class="div1"></div>
+    <div class="div2"></div>
+    <style>
+        .div1{
+            width:200px;
+            height:150px;
+            background-color:red;
+            border:2px solid yellow;
+            padding:2px;
+            display:inline-block;
+            /* box sizing content-box */
+            box-sizing: content-box;
+
+        }
+        .div2{
+            width:200px;
+            height:150px;
+            background-color:yellow;
+            border:2px solid red;
+            padding:2px;
+            display:inline-block;
+            box-sizing: border-box;
+            
+        }
+    </style>
+    <!-- The important thing is that you can inspect all the styles by clicking on inspect and see all the codes used in it -->
+</body>
+</html>
